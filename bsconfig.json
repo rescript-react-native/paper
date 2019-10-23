@@ -1,5 +1,5 @@
 {
-  "name": "@reason-react-native/__template__",
+  "name": "react-native-paper",
   "refmt": 3,
   "reason": {
     "react-jsx": 3
@@ -16,5 +16,5 @@
     }
   ],
   "bsc-flags": ["-bs-no-version-header", "-warn-error @a"],
-  "bs-dependencies": []
+  "bs-dependencies": ["reason-react", "reason-react-native"]
 }

@@ -1,18 +1,21 @@
 {
-  "name": "@reason-react-native/__template__",
-  "version": "0.0.0",
+  "name": "@reason-react-native/paper",
+  "version": "0.0.1",
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
+    "reason-react": "^0.7.0",
+    "reason-react-native": "^0.60.0"
   },
-  "repository": "https://github.com/reason-react-native/__template__.git",
+  "repository": "https://github.com/reason-react-native/paper.git",
   "license": "MIT",
   "keywords": [
     "reason",
     "reasonml",
     "bucklescript",
-    "react-native"
+    "react-native",
+    "react-native-paper"
   ],
   "files": [
     "*",
@@ -37,7 +40,10 @@
     "bs-platform": "^5.2.0",
     "husky": "^1.3.0",
     "lint-staged": "^8.1.0",
-    "prettier": "^1.18.0"
+    "prettier": "^1.18.0",
+    "react-native-paper": "^3.0.0",
+    "reason-react": "^0.7.0",
+    "reason-react-native": "^0.60.0"
   },
   "prettier": {
     "trailingComma": "all",

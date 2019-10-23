@@ -1,4 +1,4 @@
-# Changelog of `@reason-react-native/__template__`
+# Changelog of `@reason-react-native/paper`
 
 ## X.Y.Z - 20YY-MM-DD
 

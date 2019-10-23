@@ -1,55 +1,38 @@
-**How to use this template**
+# `@reason-react-native/paper`
 
-- Put your bindings in `src/ReactNativeSomething` & rename accordingly or use
-  `bsconfig.json` `"namespace"` field (more on this below),
-- Update all occurences of
-
-  - `@reason-react-native/__template__`
-  - `https://github.com/reason-react-native/__template__`
-  - `__template__`
-  - `@react-native-community/something`
-  - `https://github.com/react-native-community/something`
-  - `ReactNativeSomething`. If you have more than a file exposed, you should
-    consider using BuckleScript custom namespace by adjusting `bsconfig.json`
-    and adding a `"namespace": "react-native-something"` (note that it will be
-    converted to `ReactNativeSomething`)
-
-- Add your `@react-native-community/something` (adjusted) in `peerDependencies`
-  & `devDependencies` section
-- Adjust the changelog (and/or clean it)
-- Remove this part ⬆ & keep everything below ⬇
-
----
-
-# `@reason-react-native/__template__`
-
-[![Build Status](https://github.com/reason-react-native/__template__/workflows/Build/badge.svg)](https://github.com/reason-react-native/__template__/actions)
-[![Version](https://img.shields.io/npm/v/@reason-react-native/__template__.svg)](https://www.npmjs.com/@reason-react-native/__template__)
+[![Build Status](https://github.com/reason-react-native/paper/workflows/Build/badge.svg)](https://github.com/reason-react-native/paper/actions)
+[![Version](https://img.shields.io/npm/v/@reason-react-native/paper.svg)](https://www.npmjs.com/@reason-react-native/paper)
 [![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reasonml-community.github.io/reason-react-native/discord/)
 
 [ReasonML](https://reasonml.github.io) /
 [BuckleScript](https://bucklescript.github.io) bindings for
-[`@react-native-community/something`](https://github.com/react-native-community/something).
+[`react-native-paper`](https://github.com/callstack/react-native-paper).
 
-Exposed as `ReactNativeSomething` module.
+Exposed as `ReactNativePaper` module.
 
-`@reason-react-native/__template__` X.y._ means it's compatible with
-`@react-native-community/something` X.y._
+`@reason-react-native/paper` X.y._ means it's compatible with
+`react-native-paper X.y._
+
+## Status
+
+⚠️ Work in progress. These bindings are used successfully in several apps, but
+are not complete yet and still subject to change.
+
+[Checkout missing components](#implemented-components)
 
 ## Installation
 
-When
-[`@react-native-community/something`](`https://github.com/react-native-community/something`)
+When [`react-native-paper`](`https://github.com/callstack/react-native-paper`)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
 ```console
-npm install @reason-react-native/__template__
+npm install @reason-react-native/paper
 # or
-yarn add @reason-react-native/__template__
+yarn add @reason-react-native/paper
 ```
 
-`@reason-react-native/__template__` should be added to `bs-dependencies` in your
+`@reason-react-native/paper` should be added to `bs-dependencies` in your
 `bsconfig.json`. Something like
 
 ```diff
@@ -59,7 +42,7 @@ yarn add @reason-react-native/__template__
     "reason-react",
     "reason-react-native",
     // ...
-+    "@reason-react-native/__template__"
++    "@reason-react-native/paper"
   ],
   //...
 }
@@ -67,17 +50,27 @@ yarn add @reason-react-native/__template__
 
 ## Usage
 
-### Types
+### Components
 
-#### `ReactNativeSomething.t`
+```reason
+open ReactNativPaper;
 
-...
+[@react.component]
+let make = () => {
+  let (visible, setVisible) = React.useState(() => false);
 
-### Methods
-
-#### `ReactNativeSomething.method`
-
-...
+  <Paper.Portal>
+    <Paper.Dialog visible onDismiss={_ => setVisible(_ => false)}>
+      <Paper.Dialog.Title>
+        "Title"->React.string
+      </Paper.Dialog.Title>
+      <Paper.Dialog.Description>
+        "Description"->React.string
+      </Paper.Dialog.Description>
+    </Paper.Dialog>
+  </Paper.Portal>
+};
+```
 
 ---
 
@@ -95,3 +88,43 @@ Read the [contribution guidelines](./CONTRIBUTING.md) before contributing.
 We want this community to be friendly and respectful to each other. Please read
 [our full code of conduct](./CODE_OF_CONDUCT.md) so that you can understand what
 actions will and will not be tolerated.
+
+## Implemented components
+
+- [x] ActivityIndicator
+- [ ] Avatar
+- [x] Appbar
+- [ ] BottomNavigation
+- [x] Banner
+- [x] Button
+- [ ] Checkbox
+- [x] Card
+- [x] Chip
+- [x] Dialog
+- [x] Divider
+- [x] FAB
+- [ ] DataTable
+- [x] Drawer
+- [ ] List
+- [x] IconButton
+- [x] Modal
+- [ ] Menu
+- [ ] RadioButton
+- [ ] Searchbar
+- [x] PaperProvider
+- [x] Portal
+- [x] ProgressBar
+- [x] Snackbar
+- [x] Surface
+- [x] TextInput
+- [x] TouchableRipple
+- [ ] ToggleButton
+- [x] HelperText
+- [x] ThemeProvider
+- Typography
+  - [x] Title
+  - [x] Subheading
+  - [x] Headline
+  - [x] Paragraph
+  - [x] Caption
+  - [x] Text
