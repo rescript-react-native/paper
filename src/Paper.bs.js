@@ -9,9 +9,13 @@ var Banner = 0;
 
 var Button = 0;
 
+var Badge = 0;
+
 var Caption = 0;
 
 var Card = 0;
+
+var Checkbox = 0;
 
 var Chip = 0;
 
@@ -57,11 +61,17 @@ var TouchableRipple = 0;
 
 var HelperText = 0;
 
+var Searchbar = 0;
+
+var List = 0;
+
 exports.Appbar = Appbar;
 exports.Banner = Banner;
 exports.Button = Button;
+exports.Badge = Badge;
 exports.Caption = Caption;
 exports.Card = Card;
+exports.Checkbox = Checkbox;
 exports.Chip = Chip;
 exports.Dialog = Dialog;
 exports.Divider = Divider;
@@ -84,4 +94,6 @@ exports.ThemeProvider = ThemeProvider;
 exports.Title = Title;
 exports.TouchableRipple = TouchableRipple;
 exports.HelperText = HelperText;
+exports.Searchbar = Searchbar;
+exports.List = List;
 /* Paper__Snackbar Not a pure module */

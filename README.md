@@ -95,9 +95,10 @@ actions will and will not be tolerated.
 - [ ] Avatar
 - [x] Appbar
 - [ ] BottomNavigation
+- [x] Badge
 - [x] Banner
 - [x] Button
-- [ ] Checkbox
+- [x] Checkbox
 - [x] Card
 - [x] Chip
 - [x] Dialog
@@ -105,12 +106,12 @@ actions will and will not be tolerated.
 - [x] FAB
 - [ ] DataTable
 - [x] Drawer
-- [ ] List
+- [x] List
 - [x] IconButton
 - [x] Modal
 - [ ] Menu
 - [ ] RadioButton
-- [ ] Searchbar
+- [x] Searchbar
 - [x] PaperProvider
 - [x] Portal
 - [x] ProgressBar

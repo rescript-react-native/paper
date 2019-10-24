@@ -30,11 +30,11 @@ module Icon = {
 
   external toIconIdentity: 'a => 'b = "%identity";
 
-  let mapToIcon = icon =>
-    icon->Belt.Option.map(icon =>
-      switch (icon) {
-      | Name(name) => name->toIconIdentity
-      | Element(el) => el->toIconIdentity
-      }
-    );
+  let extractIconProps = icon =>
+    switch (icon) {
+    | Name(name) => name->toIconIdentity
+    | Element(el) => el->toIconIdentity
+    };
+
+  let mapToIcon = icon => icon->Belt.Option.map(extractIconProps);
 };

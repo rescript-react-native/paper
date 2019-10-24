@@ -11,14 +11,17 @@ function renderIcon(reRenderIcon, jsIconProps) {
             ]);
 }
 
+function extractIconProps(icon) {
+  return icon[0];
+}
+
 function mapToIcon(icon) {
-  return Belt_Option.map(icon, (function (icon) {
-                return icon[0];
-              }));
+  return Belt_Option.map(icon, extractIconProps);
 }
 
 var Icon = {
   renderIcon: renderIcon,
+  extractIconProps: extractIconProps,
   mapToIcon: mapToIcon
 };
 
