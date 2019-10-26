@@ -5,13 +5,17 @@ var Paper__ThemeProvider = require("./Paper__ThemeProvider.bs.js");
 
 var Appbar = 0;
 
+var Avatar = 0;
+
 var Banner = 0;
+
+var BottomNavigation = 0;
 
 var Button = 0;
 
-var Badge = 0;
-
 var Caption = 0;
+
+var Badge = 0;
 
 var Card = 0;
 
@@ -65,11 +69,15 @@ var Searchbar = 0;
 
 var List = 0;
 
+var ToggleButton = 0;
+
 exports.Appbar = Appbar;
+exports.Avatar = Avatar;
 exports.Banner = Banner;
+exports.BottomNavigation = BottomNavigation;
 exports.Button = Button;
-exports.Badge = Badge;
 exports.Caption = Caption;
+exports.Badge = Badge;
 exports.Card = Card;
 exports.Checkbox = Checkbox;
 exports.Chip = Chip;
@@ -96,4 +104,5 @@ exports.TouchableRipple = TouchableRipple;
 exports.HelperText = HelperText;
 exports.Searchbar = Searchbar;
 exports.List = List;
+exports.ToggleButton = ToggleButton;
 /* Paper__Snackbar Not a pure module */

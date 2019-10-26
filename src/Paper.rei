@@ -1,9 +1,10 @@
 module Appbar = Paper__Appbar;
+module Avatar = Paper__Avatar;
 module Banner = Paper__Banner;
-// module BottomNavigation = Paper__BottomNavigation;
+module BottomNavigation = Paper__BottomNavigation;
 module Button = Paper__Button;
-module Badge = Paper__Badge;
 module Caption = Paper__Caption;
+module Badge = Paper__Badge;
 module Card = Paper__Card;
 module Checkbox = Paper__Checkbox;
 module Chip = Paper__Chip;
@@ -31,3 +32,4 @@ module TouchableRipple = Paper__TouchableRipple;
 module HelperText = Paper__HelperText;
 module Searchbar = Paper__Searchbar;
 module List = Paper__List;
+module ToggleButton = Paper__ToggleButton;
