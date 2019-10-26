@@ -92,9 +92,9 @@ actions will and will not be tolerated.
 ## Implemented components
 
 - [x] ActivityIndicator
-- [ ] Avatar
+- [x] Avatar
 - [x] Appbar
-- [ ] BottomNavigation
+- [x] BottomNavigation
 - [x] Badge
 - [x] Banner
 - [x] Button
@@ -119,7 +119,7 @@ actions will and will not be tolerated.
 - [x] Surface
 - [x] TextInput
 - [x] TouchableRipple
-- [ ] ToggleButton
+- [x] ToggleButton
 - [x] HelperText
 - [x] ThemeProvider
 - Typography
