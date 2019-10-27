@@ -47,6 +47,8 @@ var Portal = 0;
 
 var ProgressBar = 0;
 
+var RadioButton = 0;
+
 var Subheading = 0;
 
 var Switch = 0;
@@ -93,6 +95,7 @@ exports.PaperProvider = PaperProvider;
 exports.Paragraph = Paragraph;
 exports.Portal = Portal;
 exports.ProgressBar = ProgressBar;
+exports.RadioButton = RadioButton;
 exports.Subheading = Subheading;
 exports.Switch = Switch;
 exports.Snackbar = Snackbar;

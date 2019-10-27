@@ -110,7 +110,7 @@ actions will and will not be tolerated.
 - [x] IconButton
 - [x] Modal
 - [ ] Menu
-- [ ] RadioButton
+- [x] RadioButton
 - [x] Searchbar
 - [x] PaperProvider
 - [x] Portal
