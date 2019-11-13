@@ -1,10 +1,8 @@
-open Paper__Utils;
-
 module Icon = {
   [@bs.module "react-native-paper"] [@bs.scope "Avatar"] [@react.component]
   external make:
     (
-      ~icon: 'icon,
+      ~icon: Paper__Icon.t=?,
       ~size: int=?,
       ~color: string=?,
       ~style: ReactNative.Style.t=?,
@@ -12,9 +10,6 @@ module Icon = {
     ) =>
     React.element =
     "Icon";
-
-  let makeProps = (~icon: Icon.iconType) =>
-    makeProps(~icon=icon->Icon.extractIconProps);
 };
 
 module Image = {

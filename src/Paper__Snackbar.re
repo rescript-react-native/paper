@@ -1,23 +1,14 @@
-[@bs.module "react-native-paper"] [@bs.scope "Snackbar"]
-external durationShort: int = "DURATION_SHORT";
-[@bs.module "react-native-paper"] [@bs.scope "Snackbar"]
-external durationMedium: int = "DURATION_MEDIUM";
-[@bs.module "react-native-paper"] [@bs.scope "Snackbar"]
-external durationLong: int = "DURATION_LONG";
+module Duration = {
+  type t;
+  [@bs.module "react-native-paper"] [@bs.scope "Snackbar"]
+  external short: t = "DURATION_SHORT";
+  [@bs.module "react-native-paper"] [@bs.scope "Snackbar"]
+  external medium: t = "DURATION_MEDIUM";
+  [@bs.module "react-native-paper"] [@bs.scope "Snackbar"]
+  external long: t = "DURATION_LONG";
 
-type duration =
-  | DurationShort
-  | DurationMedium
-  | DurationLong
-  | Duration(int);
-
-let getDuration = d =>
-  switch (d) {
-  | DurationShort => durationShort
-  | DurationMedium => durationMedium
-  | DurationLong => durationLong
-  | Duration(duration) => duration
-  };
+  external value: int => t = "";
+};
 
 [@bs.deriving abstract]
 type snackbarAction = {
@@ -29,7 +20,7 @@ type snackbarAction = {
 external make:
   (
     ~theme: Paper__ThemeProvider.appTheme=?,
-    ~duration: 'duration=?,
+    ~duration: Duration.t=?,
     ~onDismiss: unit => unit,
     ~style: ReactNative.Style.t=?,
     ~action: snackbarAction=?,
@@ -37,7 +28,3 @@ external make:
   ) =>
   React.element =
   "Snackbar";
-
-let makeProps = (~duration: option(duration)=?) => {
-  makeProps(~duration=?duration->Belt.Option.map(d => getDuration(d)));
-};

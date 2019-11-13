@@ -1,5 +1,3 @@
-open Paper__Utils;
-
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
@@ -7,7 +5,7 @@ external make:
     ~disabled: bool=?,
     ~loading: bool=?,
     ~status: [@bs.string] [ | `checked | `unchecked]=?,
-    ~icon: 'a=?,
+    ~icon: Paper__Icon.t=?,
     ~color: string=?,
     ~accessibilityLabel: string=?,
     ~style: ReactNative.Style.t=?,
@@ -16,10 +14,6 @@ external make:
   ) =>
   React.element =
   "ToggleButton";
-
-let makeProps = (~icon: option(Icon.iconType)=?) => {
-  makeProps(~icon=?icon->Icon.mapToIcon);
-};
 
 module Group = {
   [@bs.module "react-native-paper"]

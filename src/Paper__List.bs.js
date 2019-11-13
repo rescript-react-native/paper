@@ -1,6 +1,5 @@
 'use strict';
 
-var Paper__Utils = require("./Paper__Utils.bs.js");
 
 var Section = { };
 
@@ -10,15 +9,7 @@ var Subheader = { };
 
 var Item = { };
 
-function makeProps(icon) {
-  return {
-          icon: Paper__Utils.Icon.extractIconProps(icon)
-        };
-}
-
-var Icon = {
-  makeProps: makeProps
-};
+var Icon = { };
 
 var Accordion = { };
 

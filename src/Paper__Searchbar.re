@@ -1,5 +1,3 @@
-open Paper__Utils;
-
 type ref;
 
 [@bs.send] external isFocused: (ref, unit) => bool = "isFocused";
@@ -18,18 +16,9 @@ external make:
     ~placeholder: string=?,
     ~onChangeText: string => unit=?,
     ~onIconPress: ReactNative.Event.pressEvent => unit=?,
-    ~icon: 'icon=?,
-    ~clearIcon: 'clearIcon=?,
+    ~icon: Paper__Icon.t=?,
+    ~clearIcon: Paper__Icon.t=?,
     ~ref: Js.Null.t(ref) => unit=?
   ) =>
   React.element =
   "Searchbar";
-
-let makeProps =
-    (~icon: option(Icon.iconType)=?, ~clearIcon: option(Icon.iconType)=?) => {
-  makeProps(
-    ~icon=?icon->Icon.mapToIcon,
-    ~clearIcon=?clearIcon->Icon.mapToIcon,
-    (),
-  );
-};

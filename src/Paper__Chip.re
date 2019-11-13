@@ -1,5 +1,3 @@
-open Paper__Utils;
-
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
@@ -8,7 +6,7 @@ external make:
     ~disabled: bool=?,
     ~accessibilityLabel: string=?,
     ~avatar: React.element=?,
-    ~icon: 'a=?,
+    ~icon: Paper__Icon.t=?,
     ~style: ReactNative.Style.t=?,
     ~theme: Paper__ThemeProvider.appTheme=?,
     ~onPress: ReactNative.Event.pressEvent => unit=?,
@@ -17,32 +15,3 @@ external make:
   ) =>
   React.element =
   "Chip";
-
-let makeProps =
-    (
-      ~mode,
-      ~selected=?,
-      ~disabled=?,
-      ~accessibilityLabel=?,
-      ~avatar=?,
-      ~icon: option(Icon.iconType)=?,
-      ~style=?,
-      ~theme=?,
-      ~onPress=?,
-      ~onClose=?,
-      ~children,
-    ) => {
-  makeProps(
-    ~mode,
-    ~selected?,
-    ~disabled?,
-    ~accessibilityLabel?,
-    ~avatar?,
-    ~icon=?icon->Icon.mapToIcon,
-    ~style?,
-    ~theme?,
-    ~onPress?,
-    ~onClose?,
-    ~children,
-  );
-};

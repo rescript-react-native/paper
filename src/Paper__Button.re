@@ -1,5 +1,3 @@
-open Paper__Utils;
-
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
@@ -9,7 +7,7 @@ external make:
     ~raised: bool=?,
     ~loading: bool=?,
     ~dark: bool=?,
-    ~icon: 'a=?,
+    ~icon: Paper__Icon.t=?,
     ~color: string=?,
     ~accessibilityLabel: string=?,
     ~style: ReactNative.Style.t=?,
@@ -20,7 +18,3 @@ external make:
   ) =>
   React.element =
   "Button";
-
-let makeProps = (~icon: option(Icon.iconType)=?) => {
-  makeProps(~icon=?icon->Icon.mapToIcon);
-};

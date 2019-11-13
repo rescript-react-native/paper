@@ -11,10 +11,6 @@ external make:
   React.element =
   "Dialog";
 
-let makeProps = (~dismissable=true, ~visible, ~theme=?, ~style=?, ~onDismiss) => {
-  makeProps(~dismissable, ~onDismiss, ~style?, ~visible, ~theme?);
-};
-
 module Actions = {
   [@bs.module "react-native-paper"] [@bs.scope "Dialog"] [@react.component]
   external make:

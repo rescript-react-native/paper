@@ -1,6 +1,5 @@
 'use strict';
 
-var Paper__Snackbar = require("./Paper__Snackbar.bs.js");
 var Paper__ThemeProvider = require("./Paper__ThemeProvider.bs.js");
 
 var Appbar = 0;
@@ -73,6 +72,8 @@ var List = 0;
 
 var ToggleButton = 0;
 
+var Icon = 0;
+
 exports.Appbar = Appbar;
 exports.Avatar = Avatar;
 exports.Banner = Banner;
@@ -108,4 +109,5 @@ exports.HelperText = HelperText;
 exports.Searchbar = Searchbar;
 exports.List = List;
 exports.ToggleButton = ToggleButton;
-/* Paper__Snackbar Not a pure module */
+exports.Icon = Icon;
+/* Paper__ThemeProvider Not a pure module */

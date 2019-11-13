@@ -1,5 +1,3 @@
-open Paper__Utils;
-
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
@@ -16,7 +14,7 @@ module Actions = {
   external make:
     (
       ~color: string=?,
-      ~icon: 'icon=?,
+      ~icon: Paper__Icon.t=?,
       ~size: int=?,
       ~disabled: bool=?,
       ~accessibilityLabel: string=?,
@@ -26,10 +24,6 @@ module Actions = {
     ) =>
     React.element =
     "Actions";
-
-  let makeProps = (~icon: option(Icon.iconType)) => {
-    makeProps(~icon=?icon->Icon.mapToIcon);
-  };
 };
 
 module Content = {

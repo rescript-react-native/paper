@@ -1,7 +1,11 @@
-open Belt;
-open Paper__Utils;
+module Size = {
+  type t;
 
-type size = [ | `small | `large | `value(int)];
+  [@bs.val] external small: t = "small";
+  [@bs.val] external large: t = "large";
+
+  external value: int => t = "";
+};
 
 [@bs.module "react-native-paper"] [@react.component]
 external make:
@@ -9,22 +13,9 @@ external make:
     ~animation: bool=?,
     ~hidesWhenStopped: bool=?,
     ~color: string=?,
-    ~size: 'size=?,
+    ~size: Size.t=?,
     ~style: ReactNative.Style.t=?,
     ~theme: Paper__ThemeProvider.appTheme=?
   ) =>
   React.element =
   "ActivityIndicator";
-
-let makeProps = (~size: option(size)=?) => {
-  makeProps(
-    ~size=?
-      size->Option.map(size =>
-        switch (size) {
-        | `small => "small"
-        | `large => "large"
-        | `value(v) => v->toString
-        }
-      ),
-  );
-};

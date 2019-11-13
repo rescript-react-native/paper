@@ -1,5 +1,3 @@
-open Paper__Utils;
-
 module Section = {
   [@bs.module "react-native-paper"] [@bs.scope "List"] [@react.component]
   external make:
@@ -79,13 +77,9 @@ module Item = {
 module Icon = {
   [@bs.module "react-native-paper"] [@bs.scope "List"] [@react.component]
   external make:
-    (~color: string=?, ~style: ReactNative.Style.t=?, ~icon: 'icon) =>
+    (~color: string=?, ~style: ReactNative.Style.t=?, ~icon: Paper__Icon.t) =>
     React.element =
     "Icon";
-
-  let makeProps = (~icon: Icon.iconType) => {
-    makeProps(~icon=icon->Icon.extractIconProps, ());
-  };
 };
 
 module Accordion = {

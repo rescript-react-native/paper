@@ -1,3 +1,4 @@
+module ActivityIndicator = Paper__ActivityIndicator;
 module Appbar = Paper__Appbar;
 module Avatar = Paper__Avatar;
 module Banner = Paper__Banner;
@@ -33,3 +34,4 @@ module HelperText = Paper__HelperText;
 module Searchbar = Paper__Searchbar;
 module List = Paper__List;
 module ToggleButton = Paper__ToggleButton;
+module Icon = Paper__Icon;
