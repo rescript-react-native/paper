@@ -1,6 +1,5 @@
 'use strict';
 
-var Paper__ThemeProvider = require("./Paper__ThemeProvider.bs.js");
 
 var Appbar = 0;
 
@@ -110,4 +109,4 @@ exports.Searchbar = Searchbar;
 exports.List = List;
 exports.ToggleButton = ToggleButton;
 exports.Icon = Icon;
-/* Paper__ThemeProvider Not a pure module */
+/* No side effect */

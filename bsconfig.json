@@ -15,6 +15,7 @@
       "subdirs": false
     }
   ],
+  "namespace": true,
   "bsc-flags": ["-bs-no-version-header", "-warn-error @a"],
   "bs-dependencies": ["reason-react", "reason-react-native"]
 }
