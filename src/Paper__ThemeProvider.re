@@ -38,13 +38,3 @@ external make: (~theme: appTheme=?) => React.element = "ThemeProvider";
 external defaultTheme: appTheme = "DefaultTheme";
 
 [@bs.module "react-native-paper"] external darkTheme: appTheme = "DarkTheme";
-
-let createTheme =
-    (
-      ~roundness=roundnessGet(defaultTheme),
-      ~dark=darkGet(defaultTheme),
-      ~colors=colorsGet(defaultTheme),
-      ~fonts=fontsGet(defaultTheme),
-      (),
-    ) =>
-  appTheme(~roundness, ~dark, ~colors, ~fonts);

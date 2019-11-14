@@ -8,7 +8,7 @@
 [BuckleScript](https://bucklescript.github.io) bindings for
 [`react-native-paper`](https://github.com/callstack/react-native-paper).
 
-Exposed as `ReactNativePaper` module.
+Exposed as `Paper` module.
 
 `@reason-react-native/paper` X.y._ means it's compatible with
 `react-native-paper X.y._
@@ -53,8 +53,6 @@ yarn add @reason-react-native/paper
 ### Components
 
 ```reason
-open ReactNativPaper;
-
 [@react.component]
 let make = () => {
   let (visible, setVisible) = React.useState(() => false);
