@@ -10,10 +10,12 @@ module Duration = {
   external value: int => t = "";
 };
 
-[@bs.deriving abstract]
-type snackbarAction = {
-  label: string,
-  onPress: unit => unit,
+module Action = {
+  type t;
+
+  [@bs.val] external none: t = "null";
+
+  [@bs.obj] external make: (~label: string, ~onPress: unit => unit) => t = "";
 };
 
 [@bs.module "react-native-paper"] [@react.component]
@@ -23,7 +25,7 @@ external make:
     ~duration: Duration.t=?,
     ~onDismiss: unit => unit,
     ~style: ReactNative.Style.t=?,
-    ~action: snackbarAction=?,
+    ~action: Action.t=?,
     ~visible: bool
   ) =>
   React.element =
