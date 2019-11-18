@@ -7,7 +7,7 @@ module Duration = {
   [@bs.module "react-native-paper"] [@bs.scope "Snackbar"]
   external long: t = "DURATION_LONG";
 
-  external value: int => t = "";
+  external value: int => t = "%identity";
 };
 
 module Action = {
