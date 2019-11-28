@@ -26,7 +26,8 @@ external make:
     ~onDismiss: unit => unit,
     ~style: ReactNative.Style.t=?,
     ~action: Action.t=?,
-    ~visible: bool
+    ~visible: bool,
+    ~children: React.element
   ) =>
   React.element =
   "Snackbar";
