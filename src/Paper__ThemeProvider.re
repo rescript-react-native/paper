@@ -23,12 +23,17 @@ type themeFonts = {
   thin: string,
 };
 
+type configuredFonts;
+
+[@bs.module "react-native-paper"]
+external configureFonts: themeFonts => configuredFonts = "configureFonts";
+
 [@bs.deriving abstract]
 type appTheme = {
   roundness: int,
   dark: bool,
   colors: themeColors,
-  fonts: themeFonts,
+  fonts: configuredFonts,
 };
 
 [@bs.module "react-native-paper"] [@react.component]
