@@ -12,7 +12,7 @@ external make:
     ~accessibilityLabel: string=?,
     ~style: ReactNative.Style.t=?,
     ~labelStyle: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~onPress: ReactNative.Event.pressEvent => unit=?,
     ~children: React.element
   ) =>

@@ -4,7 +4,7 @@ module Section = {
     (
       ~title: string,
       ~children: React.element,
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~style: ReactNative.Style.t=?,
       ~titleStyle: ReactNative.Style.t=?
     ) =>
@@ -28,7 +28,7 @@ module Subheader = {
   [@bs.module "react-native-paper"] [@bs.scope "List"] [@react.component]
   external make:
     (
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~style: ReactNative.Style.t=?,
       ~children: React.element
     ) =>
@@ -53,7 +53,7 @@ module Item = {
       ~onPress: ReactNative.Event.pressEvent => unit=?,
       ~title: string,
       ~description: string=?,
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~style: ReactNative.Style.t=?,
       ~titleStyle: ReactNative.Style.t=?,
       ~descriptionStyle: ReactNative.Style.t=?,
@@ -92,7 +92,7 @@ module Accordion = {
       ~left: {. color: string} => React.element=?,
       ~onPress: ReactNative.Event.pressEvent => unit=?,
       ~children: React.element,
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~style: ReactNative.Style.t=?,
       ~titleStyle: ReactNative.Style.t=?,
       ~descriptionStyle: ReactNative.Style.t=?,

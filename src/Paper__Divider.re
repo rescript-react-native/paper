@@ -2,7 +2,7 @@
 external make:
   (
     ~inset: bool=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~style: ReactNative.Style.t=?
   ) =>
   React.element =

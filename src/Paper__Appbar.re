@@ -4,7 +4,7 @@ external make:
     ~dark: bool=?,
     ~children: React.element=?,
     ~style: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?
+    ~theme: Paper__ThemeProvider.Theme.t=?
   ) =>
   React.element =
   "Appbar";
@@ -37,7 +37,7 @@ module Content = {
       ~subtitleStyle: ReactNative.Style.t=?,
       ~style: ReactNative.Style.t=?,
       ~onPress: unit => unit=?,
-      ~theme: Paper__ThemeProvider.appTheme=?
+      ~theme: Paper__ThemeProvider.Theme.t=?
     ) =>
     React.element =
     "Content";
@@ -49,7 +49,7 @@ module Header = {
     (
       ~dark: bool=?,
       ~statusBarHeight: int=?,
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~children: React.element=?,
       ~style: ReactNative.Style.t=?
     ) =>

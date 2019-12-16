@@ -8,7 +8,7 @@ type ref;
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~style: ReactNative.Style.t=?,
     ~inputStyle: ReactNative.Style.t=?,
     ~value: string,

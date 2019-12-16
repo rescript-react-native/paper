@@ -5,7 +5,7 @@ module Item = {
       ~label: string,
       ~icon: React.element=?,
       ~active: bool=?,
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~onPress: ReactNative.Event.targetEvent => unit=?,
       ~style: ReactNative.Style.t=?
     ) =>

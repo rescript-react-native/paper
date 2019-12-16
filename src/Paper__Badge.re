@@ -2,7 +2,7 @@
 external make:
   (
     ~visible: bool=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~children: React.element=?,
     ~size: int=?,
     ~style: ReactNative.Style.t=?

@@ -3,7 +3,7 @@ external make:
   (
     ~value: string,
     ~status: [@bs.string] [ | `checked | `unchecked],
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~disabled: bool=?,
     ~uncheckedColor: string=?,
     ~color: string=?,
@@ -20,7 +20,7 @@ module Android = {
     (
       ~value: string,
       ~status: [@bs.string] [ | `checked | `unchecked],
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~disabled: bool=?,
       ~uncheckedColor: string=?,
       ~color: string=?,
@@ -38,7 +38,7 @@ module IOS = {
     (
       ~value: string,
       ~status: [@bs.string] [ | `checked | `unchecked],
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~disabled: bool=?,
       ~color: string=?,
       ~onPress: ReactNative.Event.pressEvent => unit=?

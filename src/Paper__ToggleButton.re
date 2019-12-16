@@ -9,7 +9,7 @@ external make:
     ~color: string=?,
     ~accessibilityLabel: string=?,
     ~style: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~onPress: string => unit=?
   ) =>
   React.element =

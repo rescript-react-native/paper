@@ -8,7 +8,7 @@ external make:
     ~avatar: React.element=?,
     ~icon: Paper__Icon.t=?,
     ~style: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~onPress: ReactNative.Event.pressEvent => unit=?,
     ~onClose: ReactNative.Event.pressEvent => unit=?,
     ~children: React.element

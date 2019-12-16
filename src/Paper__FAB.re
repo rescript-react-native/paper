@@ -6,7 +6,7 @@ external make:
     ~color: string=?,
     ~disabled: bool=?,
     ~onPress: ReactNative.Event.targetEvent => unit,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~style: ReactNative.Style.t=?,
     ~accessibilityLabel: string=?,
     ~icon: Paper__Icon.t=?

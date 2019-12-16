@@ -6,7 +6,7 @@ module Icon = {
       ~size: int=?,
       ~color: string=?,
       ~style: ReactNative.Style.t=?,
-      ~theme: Paper__ThemeProvider.appTheme=?
+      ~theme: Paper__ThemeProvider.Theme.t=?
     ) =>
     React.element =
     "Icon";
@@ -19,7 +19,7 @@ module Image = {
       ~source: 'source,
       ~size: int=?,
       ~style: ReactNative.Style.t=?,
-      ~theme: Paper__ThemeProvider.appTheme=?
+      ~theme: Paper__ThemeProvider.Theme.t=?
     ) =>
     React.element =
     "Image";
@@ -34,7 +34,7 @@ module Text = {
       ~color: string=?,
       ~style: ReactNative.Style.t=?,
       ~labelStyle: ReactNative.Style.t=?,
-      ~theme: Paper__ThemeProvider.appTheme=?
+      ~theme: Paper__ThemeProvider.Theme.t=?
     ) =>
     React.element =
     "Text";

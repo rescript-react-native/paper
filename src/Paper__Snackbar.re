@@ -21,7 +21,7 @@ module Action = {
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~duration: Duration.t=?,
     ~onDismiss: unit => unit,
     ~style: ReactNative.Style.t=?,

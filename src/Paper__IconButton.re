@@ -9,7 +9,7 @@ external make:
     ~style: ReactNative.Style.t=?,
     ~size: int=?,
     ~onPress: ReactNative.Event.pressEvent => unit=?,
-    ~theme: Paper__ThemeProvider.appTheme=?
+    ~theme: Paper__ThemeProvider.Theme.t=?
   ) =>
   React.element =
   "IconButton";

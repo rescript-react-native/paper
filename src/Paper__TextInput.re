@@ -47,7 +47,7 @@ external make:
     ~multiline: bool=?,
     ~numberOfLines: int=?,
     ~value: string=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~style: ReactNative.Style.t=?,
     ~onChange: unit => unit=?,
     ~onChangeText: string => unit=?,

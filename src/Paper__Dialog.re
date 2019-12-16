@@ -4,7 +4,7 @@ external make:
     ~visible: bool,
     ~onDismiss: unit => unit,
     ~dismissable: bool=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~style: ReactNative.Style.t=?,
     ~children: React.element
   ) =>
@@ -36,7 +36,7 @@ module Title = {
   external make:
     (
       ~style: ReactNative.Style.t=?,
-      ~theme: Paper__ThemeProvider.appTheme=?,
+      ~theme: Paper__ThemeProvider.Theme.t=?,
       ~children: React.element
     ) =>
     React.element =

@@ -47,7 +47,7 @@ external make:
                         =?,
     ~style: ReactNative.Style.t=?,
     ~barStyle: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?
+    ~theme: Paper__ThemeProvider.Theme.t=?
   ) =>
   React.element =
   "BottomNavigation";

@@ -15,7 +15,7 @@ external make:
     ~color: string=?,
     ~size: Size.t=?,
     ~style: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?
+    ~theme: Paper__ThemeProvider.Theme.t=?
   ) =>
   React.element =
   "ActivityIndicator";

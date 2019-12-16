@@ -5,7 +5,7 @@ external make:
     ~value: bool=?,
     ~color: string=?,
     ~style: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~onValueChange: bool => unit=?,
     ~children: React.element=?
   ) =>

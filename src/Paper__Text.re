@@ -8,7 +8,7 @@ external make:
     ~numberOfLines: int=?,
     ~pressRetentionOffset: Js.t({..})=?,
     ~allowFontScaling: bool=?,
-    ~theme: Paper__ThemeProvider.appTheme=?,
+    ~theme: Paper__ThemeProvider.Theme.t=?,
     ~style: ReactNative.Style.t=?,
     ~onLayout: unit => unit=?,
     ~onLongPress: unit => unit=?,

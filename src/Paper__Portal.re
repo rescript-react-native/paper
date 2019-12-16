@@ -5,6 +5,6 @@ module Host = {
 
 [@bs.module "react-native-paper"] [@react.component]
 external make:
-  (~theme: Paper__ThemeProvider.appTheme=?, ~children: React.element) =>
+  (~theme: Paper__ThemeProvider.Theme.t=?, ~children: React.element) =>
   React.element =
   "Portal";

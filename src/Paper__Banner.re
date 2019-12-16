@@ -20,7 +20,7 @@ external make:
     ~actions: array(action),
     ~image: renderImage=?,
     ~style: ReactNative.Style.t=?,
-    ~theme: Paper__ThemeProvider.appTheme=?
+    ~theme: Paper__ThemeProvider.Theme.t=?
   ) =>
   React.element =
   "Banner";

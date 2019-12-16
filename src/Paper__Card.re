@@ -25,7 +25,7 @@ type props = {
   [@bs.optional]
   style: Style.t,
   [@bs.optional]
-  theme: Paper__ThemeProvider.appTheme,
+  theme: Paper__ThemeProvider.Theme.t,
   [@bs.optional]
   testID: string,
 };
