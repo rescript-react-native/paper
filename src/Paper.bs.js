@@ -1,6 +1,8 @@
 'use strict';
 
 
+var ActivityIndicator = 0;
+
 var Appbar = 0;
 
 var Avatar = 0;
@@ -73,6 +75,7 @@ var ToggleButton = 0;
 
 var Icon = 0;
 
+exports.ActivityIndicator = ActivityIndicator;
 exports.Appbar = Appbar;
 exports.Avatar = Avatar;
 exports.Banner = Banner;

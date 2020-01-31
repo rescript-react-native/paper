@@ -1,3 +1,4 @@
+module ActivityIndicator = Paper__ActivityIndicator;
 module Appbar = Paper__Appbar;
 module Avatar = Paper__Avatar;
 module Banner = Paper__Banner;
