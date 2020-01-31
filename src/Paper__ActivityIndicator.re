@@ -1,10 +1,15 @@
-module Size = {
+module Size: {
   type t;
 
-  [@bs.val] external small: t = "small";
-  [@bs.val] external large: t = "large";
+  let small: t;
+  let large: t;
+  let value: int => t;
+} = {
+  type t = string;
 
-  external value: int => t = "";
+  let small: t = "small";
+  let large: t = "large";
+  external value: int => t = "%identity";
 };
 
 [@bs.module "react-native-paper"] [@react.component]
