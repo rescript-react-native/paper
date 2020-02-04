@@ -68,7 +68,8 @@ module Theme = {
 };
 
 [@bs.module "react-native-paper"] [@react.component]
-external make: (~theme: Theme.t=?) => React.element = "ThemeProvider";
+external make: (~theme: Theme.t=?, ~children: React.element) => React.element =
+  "ThemeProvider";
 
 [@bs.module "react-native-paper"]
 external defaultTheme: Theme.t = "DefaultTheme";
