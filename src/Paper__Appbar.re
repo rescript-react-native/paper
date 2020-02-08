@@ -60,6 +60,7 @@ module Header = {
 module BackAction = {
   [@bs.module "react-native-paper"] [@bs.scope "Appbar"] [@react.component]
   external make:
-    (~accessibilityLabel: string=?, ~onPress: 'a => unit) => React.element =
+    (~accessibilityLabel: string=?, ~onPress: 'a => unit, ~color: string=?) =>
+    React.element =
     "BackAction";
 };
