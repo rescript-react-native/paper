@@ -35,3 +35,4 @@ module Searchbar = Paper__Searchbar;
 module List = Paper__List;
 module ToggleButton = Paper__ToggleButton;
 module Icon = Paper__Icon;
+module DataTable = Paper__DataTable;
