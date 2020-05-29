@@ -1,7 +1,7 @@
 'use strict';
 
 
-var Actions = { };
+var Action = { };
 
 var Content = { };
 
@@ -9,7 +9,7 @@ var Header = { };
 
 var BackAction = { };
 
-exports.Actions = Actions;
+exports.Action = Action;
 exports.Content = Content;
 exports.Header = Header;
 exports.BackAction = BackAction;

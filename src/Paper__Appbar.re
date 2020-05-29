@@ -9,7 +9,7 @@ external make:
   React.element =
   "Appbar";
 
-module Actions = {
+module Action = {
   [@bs.module "react-native-paper"] [@bs.scope "Appbar"] [@react.component]
   external make:
     (
@@ -23,7 +23,7 @@ module Actions = {
       ~onPress: unit => unit=?
     ) =>
     React.element =
-    "Actions";
+    "Action";
 };
 
 module Content = {
