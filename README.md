@@ -27,9 +27,9 @@ is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
 ```console
-npm install @reason-react-native/paper
+npm install https://github.com/reason-react-native/paper
 # or
-yarn add @reason-react-native/paper
+yarn add https://github.com/reason-react-native/paper
 ```
 
 `@reason-react-native/paper` should be added to `bs-dependencies` in your
