@@ -45,8 +45,7 @@
     "reason-react-native": "0.62.3"
   },
   "prettier": {
-    "trailingComma": "all",
-    "proseWrap": "always"
+    "trailingComma": "all"
   },
   "lint-staged": {
     "*.{md,json,js,css}": [
