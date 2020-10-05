@@ -1,7 +1,7 @@
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
-    ~mode: [@bs.string] [ | `outlined | `flat],
+    ~mode: [ | `outlined | `flat],
     ~selected: bool=?,
     ~disabled: bool=?,
     ~accessibilityLabel: string=?,

@@ -1,17 +1,17 @@
 'use strict';
 
 
-var Section = { };
+var Section = {};
 
-var AccordionGroup = { };
+var AccordionGroup = {};
 
-var Subheader = { };
+var Subheader = {};
 
-var Item = { };
+var Item = {};
 
-var Icon = { };
+var Icon = {};
 
-var Accordion = { };
+var Accordion = {};
 
 exports.Section = Section;
 exports.AccordionGroup = AccordionGroup;

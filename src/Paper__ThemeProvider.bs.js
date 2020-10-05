@@ -1,9 +1,9 @@
 'use strict';
 
 
-var Colors = { };
+var Colors = {};
 
-var Fonts = { };
+var Fonts = {};
 
 var Theme = {
   Colors: Colors,

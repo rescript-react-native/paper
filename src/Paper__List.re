@@ -59,14 +59,8 @@ module Item = {
       ~descriptionStyle: ReactNative.Style.t=?,
       ~titleNumberOfLines: int=?,
       ~descriptionNumberOfLines: int=?,
-      ~titleEllipsizeMode: [@bs.string] [ | `head | `middle | `tail | `clip]=?,
-      ~descriptionEllipsizeMode: [@bs.string] [
-                                   | `head
-                                   | `middle
-                                   | `tail
-                                   | `clip
-                                 ]
-                                   =?,
+      ~titleEllipsizeMode: [ | `head | `middle | `tail | `clip]=?,
+      ~descriptionEllipsizeMode: [ | `head | `middle | `tail | `clip]=?,
       ~left: leftRightProps => React.element=?,
       ~right: leftRightProps => React.element=?
     ) =>

@@ -1,79 +1,79 @@
 'use strict';
 
 
-var ActivityIndicator = 0;
+var ActivityIndicator;
 
-var Appbar = 0;
+var Appbar;
 
-var Avatar = 0;
+var Avatar;
 
-var Banner = 0;
+var Banner;
 
-var BottomNavigation = 0;
+var BottomNavigation;
 
-var Button = 0;
+var Button;
 
-var Caption = 0;
+var Caption;
 
-var Badge = 0;
+var Badge;
 
-var Card = 0;
+var Card;
 
-var Checkbox = 0;
+var Checkbox;
 
-var Chip = 0;
+var Chip;
 
-var Dialog = 0;
+var Dialog;
 
-var Divider = 0;
+var Divider;
 
-var Drawer = 0;
+var Drawer;
 
-var FAB = 0;
+var FAB;
 
-var Headline = 0;
+var Headline;
 
-var IconButton = 0;
+var IconButton;
 
-var Modal = 0;
+var Modal;
 
-var Surface = 0;
+var Surface;
 
-var PaperProvider = 0;
+var PaperProvider;
 
-var Paragraph = 0;
+var Paragraph;
 
-var Portal = 0;
+var Portal;
 
-var ProgressBar = 0;
+var ProgressBar;
 
-var RadioButton = 0;
+var RadioButton;
 
-var Subheading = 0;
+var Subheading;
 
-var Switch = 0;
+var Switch;
 
-var Snackbar = 0;
+var Snackbar;
 
-var $$Text = 0;
+var $$Text;
 
-var TextInput = 0;
+var TextInput;
 
-var ThemeProvider = 0;
+var ThemeProvider;
 
-var Title = 0;
+var Title;
 
-var TouchableRipple = 0;
+var TouchableRipple;
 
-var HelperText = 0;
+var HelperText;
 
-var Searchbar = 0;
+var Searchbar;
 
-var List = 0;
+var List;
 
-var ToggleButton = 0;
+var ToggleButton;
 
-var Icon = 0;
+var Icon;
 
 exports.ActivityIndicator = ActivityIndicator;
 exports.Appbar = Appbar;

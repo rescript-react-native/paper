@@ -1,13 +1,13 @@
 'use strict';
 
 
-var Actions = { };
+var Actions = {};
 
-var Content = { };
+var Content = {};
 
-var ScrollArea = { };
+var ScrollArea = {};
 
-var Title = { };
+var Title = {};
 
 exports.Actions = Actions;
 exports.Content = Content;

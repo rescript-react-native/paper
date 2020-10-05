@@ -1,13 +1,13 @@
 'use strict';
 
 
-var Action = { };
+var Action = {};
 
-var Content = { };
+var Content = {};
 
-var Header = { };
+var Header = {};
 
-var BackAction = { };
+var BackAction = {};
 
 exports.Action = Action;
 exports.Content = Content;

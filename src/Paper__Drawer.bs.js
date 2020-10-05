@@ -1,9 +1,9 @@
 'use strict';
 
 
-var Item = { };
+var Item = {};
 
-var Section = { };
+var Section = {};
 
 exports.Item = Item;
 exports.Section = Section;

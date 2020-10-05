@@ -1,11 +1,11 @@
 'use strict';
 
 
-var Icon = { };
+var Icon = {};
 
-var $$Image = { };
+var $$Image = {};
 
-var $$Text = { };
+var $$Text = {};
 
 exports.Icon = Icon;
 exports.$$Image = $$Image;

@@ -1,7 +1,7 @@
 'use strict';
 
 
-var Host = { };
+var Host = {};
 
 exports.Host = Host;
 /* No side effect */

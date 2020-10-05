@@ -4,7 +4,7 @@ external make:
     ~value: string=?,
     ~disabled: bool=?,
     ~loading: bool=?,
-    ~status: [@bs.string] [ | `checked | `unchecked]=?,
+    ~status: [ | `checked | `unchecked]=?,
     ~icon: Paper__Icon.t=?,
     ~color: string=?,
     ~accessibilityLabel: string=?,

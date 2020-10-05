@@ -1,17 +1,11 @@
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
-    ~mode: [@bs.string] [ | `flat | `outlined],
+    ~mode: [ | `flat | `outlined],
     ~allowFontScaling: bool=?,
     ~autoCorrect: bool=?,
     ~autoFocus: bool=?,
-    ~autoCapitalize: [@bs.string] [
-                       | `none
-                       | `sentences
-                       | `words
-                       | `characters
-                     ]
-                       =?,
+    ~autoCapitalize: [ | `none | `sentences | `words | `characters]=?,
     ~autoGrow: bool=?,
     ~blurOnSubmit: bool=?,
     ~caretHidden: bool=?,

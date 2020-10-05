@@ -1,7 +1,7 @@
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
-    ~status: [@bs.string] [ | `checked | `unchecked | `indeterminate],
+    ~status: [ | `checked | `unchecked | `indeterminate],
     ~theme: Paper__ThemeProvider.Theme.t=?,
     ~disabled: bool=?,
     ~uncheckColor: string=?,
@@ -15,7 +15,7 @@ module Android = {
   [@bs.module "react-native-paper"] [@bs.scope "Checkbox"] [@react.component]
   external make:
     (
-      ~status: [@bs.string] [ | `checked | `unchecked | `indeterminate],
+      ~status: [ | `checked | `unchecked | `indeterminate],
       ~theme: Paper__ThemeProvider.Theme.t=?,
       ~disabled: bool=?,
       ~uncheckColor: string=?,
@@ -30,7 +30,7 @@ module IOS = {
   [@bs.module "react-native-paper"] [@bs.scope "Checkbox"] [@react.component]
   external make:
     (
-      ~status: [@bs.string] [ | `checked | `unchecked | `indeterminate],
+      ~status: [ | `checked | `unchecked | `indeterminate],
       ~theme: Paper__ThemeProvider.Theme.t=?,
       ~disabled: bool=?,
       ~uncheckColor: string=?,

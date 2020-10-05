@@ -1,7 +1,7 @@
 [@bs.module "react-native-paper"] [@react.component]
 external make:
   (
-    ~mode: [@bs.string] [ | `text | `outlined | `contained]=?,
+    ~mode: [ | `text | `outlined | `contained]=?,
     ~disabled: bool=?,
     ~compact: bool=?,
     ~raised: bool=?,
