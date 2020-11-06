@@ -11,6 +11,7 @@
   "repository": "https://github.com/reason-react-native/paper.git",
   "license": "MIT",
   "keywords": [
+    "rescript",
     "reason",
     "reasonml",
     "bucklescript",
