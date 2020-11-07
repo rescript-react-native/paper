@@ -1,17 +1,5 @@
 # Changelog of `@reason-react-native/paper`
 
-## X.Y.Z - 20YY-MM-DD
+## 3.0.2 - 2020-11-07
 
-Short & concise description
-
-### 💥 Breaking changes
-
-- Something, in [1234567](<link to commit on github>) by @<usename>
-
-### 🐛 Fixes
-
-- Something else, in [1234567](<link to commit on github>) by @<usename>
-
-### Internal changes
-
-(If worth mentioning)
+Initial release

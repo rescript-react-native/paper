@@ -17,8 +17,7 @@ module Theme = {
         ~placeholder: string,
         ~backdrop: string
       ) =>
-      t =
-      "";
+      t;
 
     [@bs.get] external primary: t => string = "primary";
     [@bs.get] external accent: t => string = "accent";
@@ -46,8 +45,7 @@ module Theme = {
 
     [@bs.obj]
     external make:
-      (~regular: font, ~medium: font, ~light: font, ~thin: font) => t =
-      "";
+      (~regular: font, ~medium: font, ~light: font, ~thin: font) => t;
   };
 
   [@bs.obj]
@@ -59,8 +57,7 @@ module Theme = {
       ~fonts: Fonts.configured=?,
       unit
     ) =>
-    t =
-    "";
+    t;
 
   [@bs.get] external fonts: t => Fonts.configured = "fonts";
   [@bs.get] external colors: t => Colors.t = "colors";
