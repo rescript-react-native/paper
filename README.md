@@ -10,7 +10,7 @@
 Exposed as `Paper` module.
 
 `@reason-react-native/paper` X.y.\* means it's compatible with
-`react-native-paper X.y.\*
+`react-native-paper` X.y.\*
 
 ## Status
 
@@ -21,7 +21,7 @@ are not complete yet and still subject to change.
 
 ## Installation
 
-When [`react-native-paper`](`https://github.com/callstack/react-native-paper`)
+When [`react-native-paper`](https://github.com/callstack/react-native-paper)
 is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
