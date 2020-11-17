@@ -1,5 +1,9 @@
 # Changelog of `@reason-react-native/paper`
 
+## 3.0.4 - 2020-11-17
+
+Fix npm description
+
 ## 3.0.3 - 2020-11-07
 
 - Add theme support in `PaperProvider` [#5](https://github.com/reason-react-native/paper/pull/5) by [@souhe](https://github.com/souhe)
