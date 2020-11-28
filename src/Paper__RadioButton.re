@@ -2,7 +2,7 @@
 external make:
   (
     ~value: string,
-    ~status: [@bs.string] [ | `checked | `unchecked],
+    ~status: [ | `checked | `unchecked],
     ~theme: Paper__ThemeProvider.Theme.t=?,
     ~disabled: bool=?,
     ~uncheckedColor: string=?,
@@ -19,7 +19,7 @@ module Android = {
   external make:
     (
       ~value: string,
-      ~status: [@bs.string] [ | `checked | `unchecked],
+      ~status: [ | `checked | `unchecked],
       ~theme: Paper__ThemeProvider.Theme.t=?,
       ~disabled: bool=?,
       ~uncheckedColor: string=?,
@@ -37,7 +37,7 @@ module IOS = {
   external make:
     (
       ~value: string,
-      ~status: [@bs.string] [ | `checked | `unchecked],
+      ~status: [ | `checked | `unchecked],
       ~theme: Paper__ThemeProvider.Theme.t=?,
       ~disabled: bool=?,
       ~color: string=?,

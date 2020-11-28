@@ -17,8 +17,7 @@ module Theme = {
         ~placeholder: string,
         ~backdrop: string
       ) =>
-      t =
-      "";
+      t;
 
     [@bs.get] external primary: t => string = "primary";
     [@bs.get] external accent: t => string = "accent";
@@ -46,8 +45,15 @@ module Theme = {
 
     [@bs.obj]
     external make:
-      (~regular: font, ~medium: font, ~light: font, ~thin: font) => t =
-      "";
+      (~regular: font, ~medium: font, ~light: font, ~thin: font) => t;
+  };
+
+  module Animation = {
+    type t;
+
+    [@bs.obj] external make: (~scale: float) => t;
+
+    [@bs.get] external scale: t => float = "scale";
   };
 
   [@bs.obj]
@@ -57,13 +63,14 @@ module Theme = {
       ~dark: bool=?,
       ~colors: Colors.t=?,
       ~fonts: Fonts.configured=?,
+      ~animation: Animation.t=?,
       unit
     ) =>
-    t =
-    "";
+    t;
 
   [@bs.get] external fonts: t => Fonts.configured = "fonts";
   [@bs.get] external colors: t => Colors.t = "colors";
+  [@bs.get] external animation: t => Animation.t = "animation";
   [@bs.get] external dark: t => bool = "dark";
 };
 

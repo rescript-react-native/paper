@@ -15,7 +15,7 @@ module Action = {
 
   [@bs.val] external none: t = "null";
 
-  [@bs.obj] external make: (~label: string, ~onPress: unit => unit) => t = "";
+  [@bs.obj] external make: (~label: string, ~onPress: unit => unit) => t;
 };
 
 [@bs.module "react-native-paper"] [@react.component]

@@ -1,13 +1,16 @@
 'use strict';
 
 
-var Colors = { };
+var Colors = {};
 
-var Fonts = { };
+var Fonts = {};
+
+var Animation = {};
 
 var Theme = {
   Colors: Colors,
-  Fonts: Fonts
+  Fonts: Fonts,
+  Animation: Animation
 };
 
 exports.Theme = Theme;

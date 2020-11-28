@@ -1,9 +1,9 @@
 'use strict';
 
 
-var Duration = { };
+var Duration = {};
 
-var Action = { };
+var Action = {};
 
 exports.Duration = Duration;
 exports.Action = Action;

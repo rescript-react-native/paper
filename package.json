@@ -1,16 +1,19 @@
 {
   "name": "@reason-react-native/paper",
-  "version": "3.0.0",
+  "description": "ReScript bindings for react-native-paper.",
+  "version": "3.0.4",
   "publishConfig": {
     "access": "public"
   },
   "peerDependencies": {
-    "reason-react": "^0.7.0",
-    "reason-react-native": "^0.60.0"
+    "react-native-paper": "^3.0.0",
+    "reason-react": "^0.9.0",
+    "reason-react-native": "^0.63.0"
   },
   "repository": "https://github.com/reason-react-native/paper.git",
   "license": "MIT",
   "keywords": [
+    "rescript",
     "reason",
     "reasonml",
     "bucklescript",
@@ -18,12 +21,11 @@
     "react-native-paper"
   ],
   "files": [
-    "*",
-    "!.DS_Store",
-    "!**/*.bs.js",
-    "!.merlin",
-    "!lib/bs",
-    "!lib/ocaml"
+    "*.md",
+    "bsconfig.json",
+    "src/**/*.re",
+    "src/**/*.js",
+    "!src/**/*.bs.js"
   ],
   "scripts": {
     "format:most": "prettier --write \"**/*.{md,json,js,css}\"",
@@ -34,29 +36,28 @@
     "re:clean-build": "bsb -clean-world -make-world",
     "start": "yarn re:start",
     "build": "yarn re:build",
-    "test": "yarn re:clean-build"
+    "test": "yarn re:clean-build",
+    "release": "npmpub"
   },
   "devDependencies": {
-    "bs-platform": "^5.2.0",
-    "husky": "^1.3.0",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.18.0",
+    "bs-platform": "^8.2.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.0",
+    "npmpub": "^5.0.0",
+    "prettier": "^2.0.0",
     "react-native-paper": "^3.0.0",
-    "reason-react": "^0.7.0",
-    "reason-react-native": "^0.60.0"
+    "reason-react": "^0.9.0",
+    "reason-react-native": "^0.63.0"
   },
   "prettier": {
-    "trailingComma": "all",
-    "proseWrap": "always"
+    "trailingComma": "all"
   },
   "lint-staged": {
     "*.{md,json,js,css}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.{re,rei}": [
-      "bsrefmt --in-place",
-      "git add"
+      "bsrefmt --in-place"
     ]
   },
   "husky": {

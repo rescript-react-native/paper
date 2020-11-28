@@ -1,17 +1,13 @@
 # Changelog of `@reason-react-native/paper`
 
-## X.Y.Z - 20YY-MM-DD
+## 3.0.4 - 2020-11-17
 
-Short & concise description
+Fix npm description
 
-### 💥 Breaking changes
+## 3.0.3 - 2020-11-07
 
-- Something, in [1234567](<link to commit on github>) by @<usename>
+- Add theme support in `PaperProvider` [#5](https://github.com/reason-react-native/paper/pull/5) by [@souhe](https://github.com/souhe)
 
-### 🐛 Fixes
+## 3.0.2 - 2020-11-07
 
-- Something else, in [1234567](<link to commit on github>) by @<usename>
-
-### Internal changes
-
-(If worth mentioning)
+Initial release

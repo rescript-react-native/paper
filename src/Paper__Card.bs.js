@@ -1,9 +1,9 @@
 'use strict';
 
 
-var Actions = { };
+var Actions = {};
 
-var Content = { };
+var Content = {};
 
 exports.Actions = Actions;
 exports.Content = Content;

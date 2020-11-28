@@ -1,9 +1,9 @@
 'use strict';
 
 
-var Group = { };
+var Group = {};
 
-var Row = { };
+var Row = {};
 
 exports.Group = Group;
 exports.Row = Row;
