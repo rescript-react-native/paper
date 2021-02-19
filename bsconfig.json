@@ -1,5 +1,5 @@
 {
-  "name": "react-native-paper",
+  "name": "@reason-react-native/paper",
   "refmt": 3,
   "reason": {
     "react-jsx": 3
