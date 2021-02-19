@@ -1,5 +1,9 @@
 # Changelog of `@reason-react-native/paper`
 
+## 3.0.5 - 2021-02-19
+
+Fix bsconfig.json name
+
 ## 3.0.4 - 2020-11-17
 
 Fix npm description
