@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/paper`
 
+## 3.0.6 - 2021-05-03
+
+ReScript
+
 ## 3.0.5 - 2021-02-19
 
 Fix bsconfig.json name

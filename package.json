@@ -1,7 +1,7 @@
 {
   "name": "@rescript-react-native/paper",
   "description": "ReScript bindings for react-native-paper.",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "publishConfig": {
     "access": "public"
   },
