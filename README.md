@@ -59,10 +59,10 @@ let make = () => {
   <Paper.Portal>
     <Paper.Dialog visible onDismiss={_ => setVisible(_ => false)}>
       <Paper.Dialog.Title>
-        "Title"->React.string
+        {"Title"->React.string}
       </Paper.Dialog.Title>
       <Paper.Dialog.Description>
-        "Description"->React.string
+        {"Description"->React.string}
       </Paper.Dialog.Description>
     </Paper.Dialog>
   </Paper.Portal>
