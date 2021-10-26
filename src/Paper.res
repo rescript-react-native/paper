@@ -35,5 +35,6 @@ module Searchbar = Paper__Searchbar
 module List = Paper__List
 module ToggleButton = Paper__ToggleButton
 module Icon = Paper__Icon
+
 @module("react-native-paper")
 external withTheme: React.component<'props> => React.component<'props> = "withTheme"
