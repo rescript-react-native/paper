@@ -38,8 +38,17 @@ module Theme = {
       fontWeight: string,
     }
 
+    @deriving(abstract)
+    type fontByOS = {
+      ios: t,
+      web: t,
+      android: t,
+      @optional macos: t,
+      @optional windows: t,
+    }
+
     @module("react-native-paper")
-    external configureFonts: t => configured = "configureFonts"
+    external configureFonts: fontByOS => configured = "configureFonts"
 
     @obj
     external make: (~regular: font, ~medium: font, ~light: font, ~thin: font) => t = ""
