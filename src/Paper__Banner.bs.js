@@ -1,6 +1,6 @@
 'use strict';
 
-var Curry = require("bs-platform/lib/js/curry.js");
+var Curry = require("rescript/lib/js/curry.js");
 
 function renderImage(reRenderIcon, jsIconProps) {
   return Curry._1(reRenderIcon, {
