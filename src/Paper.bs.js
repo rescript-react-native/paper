@@ -1,5 +1,6 @@
 'use strict';
 
+var ReactNativePaper = require("react-native-paper");
 
 var ActivityIndicator;
 
@@ -75,6 +76,10 @@ var ToggleButton;
 
 var Icon;
 
+function withTheme(prim) {
+  return ReactNativePaper.withTheme(prim);
+}
+
 exports.ActivityIndicator = ActivityIndicator;
 exports.Appbar = Appbar;
 exports.Avatar = Avatar;
@@ -112,4 +117,5 @@ exports.Searchbar = Searchbar;
 exports.List = List;
 exports.ToggleButton = ToggleButton;
 exports.Icon = Icon;
-/* No side effect */
+exports.withTheme = withTheme;
+/* react-native-paper Not a pure module */

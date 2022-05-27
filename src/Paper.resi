@@ -35,3 +35,9 @@ module Searchbar = Paper__Searchbar
 module List = Paper__List
 module ToggleButton = Paper__ToggleButton
 module Icon = Paper__Icon
+
+/**
+This binding follow `React.memo` in `@rescript/react` project
+@see {https://github.com/rescript-lang/rescript-react/blob/3932945175c088ff88073ff993c553979381d8da/src/React.res#L95-L96}
+*/
+let withTheme: React.component<'props> => React.component<'props>

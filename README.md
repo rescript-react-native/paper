@@ -119,6 +119,7 @@ actions will and will not be tolerated.
 - [x] ToggleButton
 - [x] HelperText
 - [x] ThemeProvider
+- [x] withTheme (HoC)
 - Typography
   - [x] Title
   - [x] Subheading
