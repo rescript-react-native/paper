@@ -9,6 +9,7 @@ module Badge = Paper__Badge
 module Card = Paper__Card
 module Checkbox = Paper__Checkbox
 module Chip = Paper__Chip
+module DataTable = Paper__DataTable
 module Dialog = Paper__Dialog
 module Divider = Paper__Divider
 module Drawer = Paper__Drawer
