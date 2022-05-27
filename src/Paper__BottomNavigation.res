@@ -2,10 +2,10 @@ type route = {
   "key": string,
   "title": string,
   "icon": string,
-  "color": string,
-  "badge": string,
-  "accessibilityLabel": string,
-  "testID": string,
+  "color": option<string>,
+  "badge": option<string>,
+  "accessibilityLabel": option<string>,
+  "testID": option<string>,
 }
 
 type jumpTo = string => unit
