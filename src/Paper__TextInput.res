@@ -1,3 +1,12 @@
+module Icon = {
+  @module("react-native-paper") @scope("TextInput") @react.component
+  external make: (~name: Paper__Icon.t, ~color: string=?) => React.element = "Icon"
+}
+module Affix = {
+  @module("react-native-paper") @scope("TextInput") @react.component
+  external make: (~text: string) => React.element = "Affix"
+}
+
 @module("react-native-paper") @react.component
 external make: (
   ~mode: [#flat | #outlined],
@@ -55,4 +64,5 @@ external make: (
   ~onBlur: unit => unit=?,
   ~testID: string=?,
   ~ref: Js.Nullable.t<'a> => unit=?,
+  ~right: React.element=?,
 ) => React.element = "TextInput"
